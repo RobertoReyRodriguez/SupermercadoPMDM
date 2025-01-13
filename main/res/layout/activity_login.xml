@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <!-- Logo del Supermercado -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"/>
+
+    <!-- Título del Login -->
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio de Sesión"
+        android:textSize="24sp"
+        android:textColor="@color/green"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/perfect_bomber"/>
+
+    <!-- Campo de Usuario -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario / Username"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/green"
+        android:inputType="text"/>
+
+    <!-- Campo de Contraseña -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña / Password"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/green"
+        android:inputType="textPassword"/>
+
+    <!-- Botón de Login -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/green"
+        android:text="Iniciar Sesión / Log In"
+        android:textColor="@color/white"
+        android:fontFamily="@font/perfect_bomber"/>
+
+    <!-- Botón de Cambiar Idioma -->
+    <Button
+        android:id="@+id/switchLanguageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cambiar a Inglés / Switch to Spanish"
+        android:textColor="@color/green"/>
+
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Registrar / Register"
+        android:textColor="@color/green"
+        android:backgroundTint="@color/white" />
+
+</LinearLayout>
